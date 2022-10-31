@@ -27,7 +27,8 @@
         "no-duplicate-imports": "error",
         "@typescript-eslint/no-non-null-assertion": "off",
         "@typescript-eslint/no-empty-interface": "off",
-        "react-hooks/exhaustive-deps": "warn"
+        "react-hooks/exhaustive-deps": "warn",
+        "@typescript-eslint/ban-ts-commen": "off"
     },
     "settings": {
         "import/resolver": {

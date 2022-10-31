@@ -6,6 +6,7 @@ import { Container, List, Item, Placeholder, Select } from './styled'
 import { ICategory } from 'models/categories'
 import { useAppDispatch } from 'store/hooks'
 import { chooseCategory } from 'store/slices/categoriesSlice'
+import { decodeEntities } from 'utils/common'
 
 type IProps = {
   list?: IDropDownList
@@ -66,7 +67,7 @@ const Dropdown = ({ list = [], placeholder = 'select', defaultValue = '' }: IPro
         {!list.length && <Box>Loading...</Box>}
         {list.map((category) => (
           <Item key={category.id} onClick={() => handleSelect(category)}>
-            <p>{category.name}</p>
+            <p>{decodeEntities(category.name)}</p>
           </Item>
         ))}
       </List>

@@ -9,6 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { QUIZ_END_ROUTE } from 'constants/router'
 import Heading from 'components/heading'
 import { Container } from './styled'
+import { decodeEntities } from 'utils/common'
 
 interface IProps extends IQuestion {
   questionNumber: number
@@ -62,7 +63,7 @@ const Question = ({
       <Container>
         {cases.map((name) => (
           <CaseButton key={name} onClick={() => onSelectCase(name)}>
-            {name}
+            {decodeEntities(name)}
           </CaseButton>
         ))}
       </Container>

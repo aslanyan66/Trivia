@@ -1,4 +1,5 @@
 import { Typography, TypographyProps } from '@mui/material'
+import { decodeEntities } from 'utils/common'
 
 interface IProps extends TypographyProps {
   title: string
@@ -8,7 +9,7 @@ interface IProps extends TypographyProps {
 const Title = ({ title, ...rest }: IProps) => {
   return (
     <Typography sx={{ textAlign: 'center' }} {...rest}>
-      {title}
+      {decodeEntities(title)}
     </Typography>
   )
 }
