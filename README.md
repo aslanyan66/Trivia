@@ -10,6 +10,8 @@ In the project directory, you can run:
 
 Put it in .env.development REACT_APP_API_URL=https://opentdb.com/
 
+### `yarn install`
+
 ### `yarn start`
 
 Runs the app in the development mode.\
