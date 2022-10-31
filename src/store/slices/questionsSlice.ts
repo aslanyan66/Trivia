@@ -58,7 +58,7 @@ export const questionsSlice = createSlice({
   },
 })
 
-export const { getQuestion, addScore } = questionsSlice.actions
+export const { getQuestion, addScore, clearState: clearQuestionsState } = questionsSlice.actions
 
 export const selectQuestions = (state: RootState) => state.questions
 

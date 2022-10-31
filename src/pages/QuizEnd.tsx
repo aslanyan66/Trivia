@@ -1,10 +1,18 @@
-import { useAppSelector } from 'store/hooks'
-import { selectQuestions } from 'store/slices/questionsSlice'
+import { useEffect } from 'react'
+import { useAppDispatch, useAppSelector } from 'store/hooks'
+import { clearQuestionsState, selectQuestions } from 'store/slices/questionsSlice'
 import { Box } from '@mui/material'
 import { Title } from 'components'
 
 const QuizEnd = () => {
   const { list: questions, score } = useAppSelector(selectQuestions)
+  const dispatch = useAppDispatch()
+
+  useEffect(() => {
+    return () => {
+      dispatch(clearQuestionsState())
+    }
+  }, [dispatch])
 
   return (
     <Box>
