@@ -1,0 +1,40 @@
+@import './reset.css';
+@import './fonts.css';
+
+html , body , #root {
+    font-family: 'Barlow', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    max-width: 64.1666667%;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 6.97916667%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #95B6A9;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background: #3A7859;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #42A976;
+}
