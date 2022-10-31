@@ -10,5 +10,8 @@ export const StyledApp = styled(Box)(
     background: primary.background,
     width: '100%',
     minHeight: '100%',
+    '@media screen and (orientation: landscape)': {
+      minHeight: '600px',
+    },
   }),
 )
