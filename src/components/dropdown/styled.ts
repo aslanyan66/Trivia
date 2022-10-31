@@ -6,10 +6,14 @@ export const Container = styled(Box)(
   ({
     theme: {
       palette: { custom },
+      breakpoints,
     },
   }) => ({
     position: 'relative',
     width: 320,
+    [breakpoints.down('lg')]: {
+      width: 250,
+    },
     '& *': {
       transition: 'all 200ms ease-in-out',
     },
@@ -53,11 +57,14 @@ export const Select = styled(Box)(
   }),
 )
 
-export const Placeholder = styled('p')(({ theme: { palette } }) => ({
+export const Placeholder = styled('p')(({ theme: { palette, breakpoints } }) => ({
   fontSize: '18px',
   fontWeight: '500',
   lineHeight: '170%',
   color: palette.custom.gray,
+  [breakpoints.down('lg')]: {
+    fontSize: '16px',
+  },
 }))
 
 export const List = styled('ul')(
@@ -91,7 +98,8 @@ export const List = styled('ul')(
 export const Item = styled('li')(
   ({
     theme: {
-      palette: { custom, primary },
+      palette: { custom },
+      breakpoints,
     },
   }) => ({
     display: 'flex',
@@ -113,6 +121,9 @@ export const Item = styled('li')(
       minHeight: '100%',
       width: '100%',
       color: palette.primary.dark,
+      [breakpoints.down('lg')]: {
+        fontSize: '15px',
+      },
       '&:hover': {
         color: palette.custom.green,
       },

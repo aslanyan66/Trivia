@@ -4,7 +4,6 @@ import { palette } from './palette'
 import { components } from './components'
 
 export const globalTheme = createTheme({
-  typography,
   palette,
   components,
   breakpoints: {
@@ -17,3 +16,19 @@ export const globalTheme = createTheme({
     },
   },
 })
+
+globalTheme.typography.h1 = {
+  ...typography.h1,
+  [globalTheme.breakpoints.down('lg')]: {
+    fontSize: '40px',
+  },
+  color: palette.custom.green,
+}
+
+globalTheme.typography.h2 = {
+  ...typography.h2,
+  [globalTheme.breakpoints.down('lg')]: {
+    fontSize: '20px',
+  },
+  color: palette.custom.green,
+}

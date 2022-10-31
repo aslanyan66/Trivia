@@ -8,6 +8,7 @@ import { addScore } from 'store/slices/questionsSlice'
 import { useNavigate } from 'react-router-dom'
 import { QUIZ_END_ROUTE } from 'constants/router'
 import Heading from 'components/heading'
+import { Container } from './styled'
 
 interface IProps extends IQuestion {
   questionNumber: number
@@ -57,22 +58,14 @@ const Question = ({
         title={`Questions ${questionNumber == 10 ? questionNumber : `0${questionNumber}`}`}
         subtitle={question}
         statusName={difficulty}
-        sx={{ marginBottom: '72px' }}
       />
-      <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          columnGap: '15px',
-        }}
-      >
+      <Container>
         {cases.map((name) => (
           <CaseButton key={name} onClick={() => onSelectCase(name)}>
             {name}
           </CaseButton>
         ))}
-      </Box>
+      </Container>
     </Box>
   )
 }
