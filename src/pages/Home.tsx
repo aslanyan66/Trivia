@@ -12,7 +12,7 @@ const Home = () => {
     return () => {
       dispatch(clearCategoryState())
     }
-  }, [])
+  }, [dispatch])
 
   return <Categories />
 }

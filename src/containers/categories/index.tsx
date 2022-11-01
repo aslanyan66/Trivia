@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from 'store/hooks'
 import { selectCategories } from 'store/slices/categoriesSlice'
-import { Dropdown, Heading, Title } from 'components'
+import { Dropdown, Heading } from 'components'
 import { Container } from './styled'
 import { Box } from '@mui/material'
 import { DefaultButton } from 'components/customButton/styled'
