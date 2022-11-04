@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="461949c0-6639-4045-ab63-cc55ae83496f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/models/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/QuizEnd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/QuizEnd.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/localStorageService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/localStorageService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/categoriesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/categoriesSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/slices/questionsSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/slices/questionsSlice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/common.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GwprtSlTFy4687YTxb2vWikzdd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Siranush/Desktop/Новая папка/Trivia&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\Siranush\\AppData\\Roaming\\npm\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Siranush\\AppData\\Roaming\\npm\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Siranush\\Desktop\\Новая папка\\Trivia\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="461949c0-6639-4045-ab63-cc55ae83496f" name="Changes" comment="" />
+      <created>1667309702703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667309702703</updated>
+      <workItem from="1667309703945" duration="6669000" />
+      <workItem from="1667496938980" duration="6771000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

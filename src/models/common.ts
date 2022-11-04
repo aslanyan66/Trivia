@@ -1,5 +1,3 @@
-import { Theme } from '@mui/material'
-
 export type IUniqueId = number | string
 
 export type IDropdownListItem = {
@@ -7,3 +5,9 @@ export type IDropdownListItem = {
   name: string
 }
 export type IDropDownList = IDropdownListItem[]
+
+export interface IFinalResult {
+  categoryId: IUniqueId
+  date: string
+  score: string
+}

@@ -3,17 +3,20 @@ import { RootState } from 'store/store'
 import { ICategory, IServerCategoryResponse } from 'models/categories'
 import axios from 'axios'
 import { CATEGORIES_API } from 'api/api'
+import { IUniqueId } from 'models/common'
 
 export interface ICategoriesState {
   selected: null | ICategory
   list: [] | ICategory[]
   status: 'idle' | 'loading' | 'failed'
+  selectedId: IUniqueId | null
 }
 
 const initialState: ICategoriesState = {
   selected: null,
   list: [],
   status: 'idle',
+  selectedId: null,
 }
 
 export const getCategoriesAsync = createAsyncThunk(
@@ -30,6 +33,7 @@ export const categoriesSlice = createSlice({
   reducers: {
     chooseCategory: (state, action: PayloadAction<ICategory>) => {
       state.selected = action.payload
+      state.selectedId = action.payload.id
     },
     clearCategoryState: (state) => {
       state.selected = null
