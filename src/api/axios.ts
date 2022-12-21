@@ -1,4 +1,5 @@
 import axios, { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios'
+import { config } from './api'
 
 const onRequest = (config: AxiosRequestConfig): AxiosRequestConfig => config
 
@@ -8,6 +9,6 @@ const onResponse = (response: AxiosResponse): AxiosResponse => response.data
 
 const onResponseError = (error: AxiosError): Promise<AxiosError> => Promise.reject(error)
 
-axios.defaults.baseURL = process.env.REACT_APP_API_URL
+axios.defaults.baseURL = config
 axios.interceptors.request.use(onRequest, onRequestError)
 axios.interceptors.response.use(onResponse, onResponseError)

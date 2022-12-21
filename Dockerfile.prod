@@ -1,0 +1,11 @@
+FROM ubuntu:latest
+
+WORKDIR /var/www/html
+
+RUN apt-get -y update
+RUN apt-get -y install apache2
+
+COPY build .
+
+CMD ["/usr/sbin/apache2ctl", "-D","FOREGROUND"]
+EXPOSE 80

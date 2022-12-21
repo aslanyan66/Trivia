@@ -2,6 +2,25 @@
 
 This project was bootstrapped with [Create React Index](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
+## If you want to use docker you need to install it. 
+## Check your docker version to doing `docker version`
+
+## If you want to see production version using docker accord steps
+
+### `yarn build`
+### `docker build -t yourImageName -f ./Dockerfile.prod .`
+### `docker images` or `docker image ls` if you see your image go on
+### `docker run -d -p port:containerPort yourImageName`
+### `docker ps` if you see your container try to go with your public ip
+
+## If you want to develop with docker you need to accord the steps
+
+### `docker build -t yourImageName -f ./Dockerfile.dev .
+### `docker images` or `docker image ls` if you see your image go on
+### `docker run -d -p 3000:3000 yourImageName`
+### `docker ps` if you see your container you can already develop
+
+
 ## Available Scripts
 
 In the project directory, you can run:
